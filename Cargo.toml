@@ -3,4 +3,18 @@ name = "erase-serde-skip"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+proc-macro = true
+
 [dependencies]
+syn = { version = "2.0", features = ["full"] }
+quote = "1.0"
+proc-macro2 = "1.0"
+
+[dev-dependencies]
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1"
+erase-serde-skip = { path = "." }
+syn = { version = "2.0", features = ["full"] }
+quote = "1.0"
+serde_json = "*"
