@@ -1,6 +1,6 @@
 # erase-serde-skip
 
-> **A tiny proc-macro that erases every `skip_serializing_if = ...` from field-level `#[serde(...)]` attributes, while leaving all other `serde` options—and every non-serde attribute—untouched.**
+**A tiny proc-macro that erases every `skip_serializing_if = ...` from field-level `#[serde(...)]` attributes, while leaving all other `serde` options—and every non-serde attribute—untouched.**
 
 ## WARNING
 
